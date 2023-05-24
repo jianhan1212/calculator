@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="H01.css"/>
+    <script src="TodoList.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title"><a href="index.html">Todo&nbspList</a></div>
+        <div id="add-task-container">
+            <input type="text" placeholder="可以輸入想打的內容" id="input"/>
+            <button id="add-task"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+
+        <div id="task-container"></div>
+    </div>
+
+
+
+
+    
+    <!-- <div class="container">
+        <div class="wrap">
+            <div id="t">TODO&nbspLIST</div>
+        </div>
+        <div class="inputbox">
+            <input type="text" id="input" placeholder="請輸入內容">
+            <button type="button" class="btnclass">►</button>
+            <script>
+                let btn = document.querySelector(".btnclass");
+                let show = document.querySelector(".item");
+                btn.addEventListener('click', function () {
+                    let memo = document.getElementById("input").value;
+                    if (memo === "") {
+                        alert("請輸入內容!");
+                    } else {
+                        alert("新增成功!");
+                        item.innerHTML = memo;
+                        console.log(memo);
+                    }
+                }, false);
+            </script>
+        </div>
+        <div class="lists-fluid">
+            <div class="row" id="list">
+                <div class="item" id="item"></div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
