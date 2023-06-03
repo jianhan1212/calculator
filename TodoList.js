@@ -66,8 +66,8 @@ addBtn.addEventListener('click', () => {
         editBtn.hidden = true
         fixBtn.hidden = false
         task.appendChild(newinput)
-        
-        fixBtn.addEventListener('click', () => {
+        console.log("edit")
+        fixBtn.onclick = () => {
             let currentinput = `${newinput.value}`
             newinput.remove()
             let newli = document.createElement('li')
@@ -76,7 +76,9 @@ addBtn.addEventListener('click', () => {
             deleteBtn.hidden = false
             editBtn.hidden = false
             fixBtn.hidden = true
-        });
+            li = newli
+            console.log(currentinput)
+        }
         
     })
 
