@@ -5,12 +5,72 @@ body {
     box-sizing: border-box;  
 }
 
-/* body {
-    background-color: darkgray;
-} */
+body {
+    height: 100vh;
+}
+.sidebar .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: gray;
+    transition: .5s;
+}
+
+.sidebar.close {
+    width: 60px;
+}
+.sidebar .image-text img {
+    width: 60px;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+.header-text .name {
+    font-weight: 600;
+}
+.sidebar header .bx-chevrons-right {
+    position: absolute;
+    top: 20%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background: pink;
+    color: blue;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.sidebar.close .bx-chevrons-right{
+    transform: translateY(-50%) rotate(0deg);
+}
 
 .container {
     width: 80%;
+    min-width: 420px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -114,6 +174,7 @@ body {
     font-size: 1rem;
     align-self: stretch;
     text-align: start;
+    resize: none;
 }
 
 .task .checkBtn {
@@ -138,6 +199,13 @@ body {
     font-size: 1.3rem;
 }
 
+.task .fixBtn {
+    bottom: 6%;
+    right: 9%;
+    border: 2px solid blue;
+    font-size: 1.3rem;
+}
+
 
 .task .editBtn:hover {
     background-color: orange;
@@ -147,6 +215,11 @@ body {
 
 .task .deleteBtn:hover {
     background-color: red;
+    color: #fff;
+}
+
+.task .fixBtn:hover {
+    background-color: blue;
     color: #fff;
 }
 
